@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>
+			Bootstrap components + paypal accessibility plugin - SGMAP
+		</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../bootstrapAccessibilityPlugin/css/bootstrap-accessibility.css">
+		<style type="text/css">
+			li a strike {
+				color: #999 !important;
+			}
+			.navbar {
+				background: #2868C9;
+			}
+			.navbar .navbar-brand {
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<header role="banner">
+			<nav class="navbar navbar-dark">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="index.html" class="navbar-brand">
+							Accueil des tests Bootstrap components + paypal accessibility plugin
+						</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container">
+			<h1>Bootstrap components + paypal accessibility plugin</h1>
+
+			<p class="alert alert-info">
+				{
+					"bootstrap": "^3.3.7",
+					"jquery": "^3.1.1"
+				}
+				+ Bootstrap accessibility plugin V1.0.5
+			</p>
+
+			<table class="table table-bordered">
+				<caption>Tableau des composants d’interface pour la bibliothèque Bootstrap avec le <span lang="en">plugin</span> "<span lang="en">Paypal Bootstrap Accessibility</span>"</caption>
+				<thead>
+					<tr>
+						<th scope="col">composant</th>
+						<th scope="col">évaluation du composant natif</th>
+						<th scope="col">correction</th>
+						<th scope="col">restitution lecteurs d'écran</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row" lang="en">Modal - Dialog</th>
+						<td class="danger">non conforme</td>
+						<td class="warning">aucune</td>
+						<td class="info">A TESTER</td>
+					</tr>
+					<tr>
+						<th scope="row" lang="en">Tabpannel</th>
+						<td class="success">conforme</td>
+						<td class="success">aucune</td>
+						<td class="info">A TESTER</td>
+					</tr>
+					<tr>
+						<th scope="row" lang="en">Accordion</th>
+						<td class="danger">non conforme</td>
+						<td class="warning">aucune</td>
+						<td class="info">A TESTER</td>
+					</tr>
+					<tr>
+						<th scope="row" lang="en">Menu</th>
+						<td colspan="3">
+							non applicable <br>
+							le menu proposé par la bibliothèque s'apparente à un menu de navigation, alors que le motif de conception définit un menu applicatif
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>La bibliothèque <span lang="en">Bootstrap</span> avec le <span lang="en">plugin</span> de Paypal renforce l'accessibilité des composants de Bootstrap. Néanmoins il reste 1 erreur sur la modale : le <span lang="en">focus</span> n'est pas donné sur le 1<sup>er</sup> élément "focusable" lors de l'ouverture de celle-ci. De même il reste 1 erreur sur l'Accordion : de l'extérieur du composant, lorsqu'un panneau est actif, le focus n'est pas donné sur le titre du premier panneau actif. La correction de ces composants n'est pas proposée ici pour éviter d'avoir un plugin de plugin.</p>
+
+			<!-- Slider -->
+			<h2>Sliders</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+
+			<!-- Progressbar -->
+			<h2>Progress bar</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+
+			<!--Dialog-->
+			<h2>Dialog (modal) </h2>
+			<ul lang="fr">
+				<li><a href="modal/index.html">Composant dialog original</a></li>
+				<li>Composant dialog avec erreur, pas de correction proposée</li>
+			</ul>
+
+			<!--Tab-->
+			<h2>Tabs </h2>
+			<ul lang="fr">
+				<li><a href="tabs/index.html">Composant tabs original</a></li>
+				<li>Composant tabs sans erreur, pas de correction nécessaire</li>
+			</ul>
+
+			<!--Tooltip -->
+			<h2>Tooltip</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+
+			<!--Accordion -->
+			<h2>Accordion</h2>
+			<ul lang="fr">
+				<li><a href="collapse/index.html">Composant accordion original</a></li>
+				<li>Composant tabs sans erreur, pas de correction nécessaire</li>
+			</ul>
+
+			<!--Menu -->
+			<h2>Menu (Navbar)</h2>
+			<p>Non applicable.</p>
+
+			<!--Button -->
+			<h2>Button</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+
+			<h2>Radio button</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+
+			<h2>Checkbox button</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+
+			<h2>Tree</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+
+			<h2>Autocomplete</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+
+			<h2>Datepicker</h2>
+			<p>Non proposé par la bibliothèque d'origine.</p>
+		</div>
+
+			<!-- JS and analytics only. -->
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../bootstrapAccessibilityPlugin/js/bootstrap-accessibility.js"></script>
+	</body>
+</html>

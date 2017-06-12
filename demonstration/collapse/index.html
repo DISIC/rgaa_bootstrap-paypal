@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>
+			Composant Accordion d'origine - Bootstrap components + paypal accessibility plugin - SGMAP
+		</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../../bootstrapAccessibilityPlugin/css/bootstrap-accessibility.css">
+		<style type="text/css">
+			.navbar .navbar-brand {
+				color: #fff;
+			}
+			*:focus {
+				border : 2px solid red !important;
+			}
+			.navbar {
+				background: #2868C9;
+			}
+		</style>
+	</head>
+	<body>
+		<header role="banner">
+			<nav class="navbar navbar-dark">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="../index.html" class="navbar-brand">
+							Accueil des tests Bootstrap components + paypal accessibility plugin
+						</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container" role="main">
+
+			<!-- Collapse
+			================================================== -->
+			<div class="bs-docs-section">
+				<div class="page-header">
+					<h1 id="collapse">Collapse <small>collapse.js</small></h1>
+				</div>
+
+				<h3>About</h3>
+				<p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
+
+				<p>Du contenu avec un <a href="#">lien</a> avant le composant</p>
+
+				<div class="bs-callout bs-callout-danger">
+					<h4>Plugin dependency</h4>
+					<p>Collapse requires the <a href="#transitions">transitions plugin</a> to be included in your version of Bootstrap.</p>
+				</div>
+
+				<h2 id="collapse-examples">Example accordion</h2>
+				<p>Using the collapse plugin, we built a simple accordion by extending the panel component.</p>
+
+				<div class="bs-example">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										Collapsible Group Item #1
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+										Collapsible Group Item #2
+									</a>
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										Collapsible Group Item #3
+									</a>
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+								<div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- /example -->
+				<p>Du contenu avec un <a href="#">lien</a> après le composant</p>
+			</div>
+		</div>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../../bootstrapAccessibilityPlugin/js/bootstrap-accessibility.js"></script>
+	</body>
+</html>

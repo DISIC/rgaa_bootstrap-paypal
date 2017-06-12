@@ -1,0 +1,11 @@
+{
+  "name": "rgaa-bootstrap-paypal",
+  "version": "1.0.0",
+  "description": "Accessible bootstrap paypal components.",
+  "author": "Etat Plateforme <rgaa.sgmap@modernisation.gouv.fr>",
+  "license": "CC-BY 2.0",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}
